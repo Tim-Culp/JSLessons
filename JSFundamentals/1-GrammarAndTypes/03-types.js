@@ -73,6 +73,10 @@ let zipcode = 12345;
 
 console.log(firstName, lastName, aptNumber, houseNumber, street, city + ",", state, zipcode);
 
+console.log(`${firstName} ${lastName}, ${houseNumber} ${street} ${city}, ${state} ${zipcode}`)
+
+
+// Object
 let firstObject = {
     Name: "Bobby",
     Age: 999,
