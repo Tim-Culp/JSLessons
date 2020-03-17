@@ -1,0 +1,83 @@
+<!--
+    Challenge 1
+      Two Truths and a Lie
+      Bronze:
+      Make an h1 tag saying 'Two Truths and a Lie'
+      Make 3 h3 tags, each saying a short blurb about that option (example: 'Been to Russia')
+      Make 3 p tags (one for each h3 tag), giving a short sentence elaborating that truth/lie
+      Wrap it all in a div tag
+      Silver:
+      Using CSS:
+      Make the h1 tag LIGHT GREEN and CENTERED
+      Make each h3 tag BLUE
+      Make each p tag RED
+      Wrap it all in a BORDER that is THICK and BLACK
+      Gold:
+      Curve the corners of that BORDER
+      Give it a BACKGROUND COLOR of GREY
+      Wrap each Truth/Lie in separate divs, give them each a BORDER, curve the BORDER, and make each BACKGROUND COLOR LIGHT GREY
+      CENTER everyting in each div
+      Line each Truth/Lie side-by-side
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Boy</title>
+    <style>
+        .H1 {
+            color: lightgreen;
+            text-align: center;
+        }
+        .H3 {
+            color: blue;
+            width:80%;
+            margin: auto;
+            text-align: center;
+            font-size: 20pt;
+        }
+        .P {
+            color: red;
+            width:80%;
+            margin:auto;
+            font-size: 15pt;
+            padding: 8px;
+        }
+        .DIV {
+            border: 6px solid black;
+            border-radius: 4em;
+            background-color: gray;
+            margin:auto;
+            width: 100%;
+            align-items: center;
+            align-content: center;
+            height:fit-content;
+        }
+        body {
+            background-color: #303030;
+        }
+    </style>
+</head>
+<body>
+    <div class="DIV">
+        <h1 class="H1">Two Truths and a Lie</h1>
+        <!--so apparently the float:right sections need to be put first on the list.-->
+        <div class="DIV" style="width: 30%; float:right;">
+            <h3 class="H3">3. I was home schooled</h3>
+            <p class="P">It's not about who educated you, but what you were taught.</p>
+        </div>
+
+        <div class="DIV" style="width: 30%; float:left;">
+            <h3 class="H3">1. I've fried onions from scratch</h3>
+            <p class="P">One day I decided to grab my own ingredients and prepare a fresh, restaurant-style meal at home for once.</p>
+        </div>
+        <div class="DIV" style="width: 30%; float:none;">
+            <h3 class="H3">2. I've been ice skating</h3>
+            <p class="P">I slipped almost every step of the way, but at least I had fun.</p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

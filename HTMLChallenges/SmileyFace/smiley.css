@@ -1,0 +1,165 @@
+:root {
+    --stogie-color: brown;
+    --stogie-fire-color: red;
+    --hair-color: rgb(131, 32, 32);
+    --face-radius:500px;
+}
+
+body {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fqtxasset.com%2Fsensorsmag%2F1545150337%2FMARKET_1.gif%3F5rwTmqHA0dNiJGlU8VbqYA3JIrLFr6RZ&f=1&nofb=1");
+    background-repeat: no-repeat;
+    height: 719px;
+    background-size: cover;
+    background-color: black;
+}
+.face {
+    background-color: yellow;
+    border-radius: 100%;
+    position: absolute;
+    width:var(--face-radius);
+    height:var(--face-radius);
+    left: 500px;
+    z-index: 1;
+}
+.eyes {
+    width:100%;
+    height:15%;
+    position: relative;
+    top: 130px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.eye {
+    background-color: rgb(255, 151, 151);
+    width: 15%;
+    height: 100%;
+    border-radius: 100%;
+}
+.pupil {
+    position: relative;
+    border-radius: 100%;
+    margin: auto;
+    top: 12px;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(139, 21, 21);
+}
+.nose {
+    position: relative;
+    width: 0;
+    height: 0;
+    top: 140px;
+    margin: auto;
+
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid rgb(136, 136, 0);
+}
+.mouth {
+    width:50%;
+    height:15%;
+    position:relative;
+    margin:auto;
+    top:40%;
+    display: flex;
+    z-index: 1;
+}
+.tooth {
+    height: 100%;
+    width:25%;
+    border: 2px solid black;
+    background-color:rgb(196, 196, 83);
+}
+.open-mouth {
+    background-color: black;
+    height: 30%;
+    width: 95%;
+    position: absolute;
+    top: 30%;
+    left: 2.5%;
+    border-bottom-left-radius:30%;
+    border-bottom-right-radius:30%;
+}
+.stogie {
+    background-image: linear-gradient(to right, var(--stogie-color), var(--stogie-fire-color));
+    position: absolute;
+    top: 120%;
+    left: 70%;
+    width:75%;
+    height:15%;
+    border-radius: 25%;
+    transform: rotate(45deg);
+}
+.stogie-thickness {
+    background-image: linear-gradient(to right, var(--stogie-color), var(--stogie-fire-color));
+    height: 190%;
+    width: 50%;
+    position: relative;
+    top: -50%;
+    left: 40%;
+    border-radius: 25%;
+}
+.bigsmoke {
+    position: absolute;
+    left: 47%;
+    top: -1150%;
+}
+.eyebrows {
+    width: 100%;
+    height: 0%;
+    position: relative;
+    top: -80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.eyebrow {
+    height: 100%;
+    width: 13%;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-bottom: 35px solid var(--hair-color);
+}
+.eyelids {
+    position: absolute;
+    height:5%;
+    width:450px;
+    top: 190px;
+    left: 35px;
+
+    background-color: yellow;
+}
+.hat {
+    width: 550px;
+    height: 20%;
+    background-color: chartreuse;
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    border-top-left-radius: 200%;
+    border-top-right-radius: 200%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.beard {
+    width: 450px;
+    height: 200px;
+    position: absolute;
+    background-color: var(--hair-color);
+    border-radius: 100%;
+    top: 80px;
+    left: 25px;
+    background-clip: content-box;
+    padding-top: 200px;
+    padding-bottom: 0px;
+}
+.shirt {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 600px;
+    height:500px;
+    position: absolute;
+    left: 460px;
+    top: 400px;
+    background-color: green;
+    z-index: -1;
+}
