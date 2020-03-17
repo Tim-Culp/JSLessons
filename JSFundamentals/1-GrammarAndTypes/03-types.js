@@ -82,6 +82,8 @@ let firstObject = {
 console.log(firstObject);
 console.log(typeof firstObject);
 
+console.log("asdf");
+
 //Array
 let firstArray = ["Spanish", "English", "Pig Latin"];
 
