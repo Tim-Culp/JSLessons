@@ -1,9 +1,9 @@
 let weather = 54;
 
 if (weather > 50) {
-    console.log("No Jacket Necessary")
+    console.log(`No Jacket Necessary`)
 } else {
-    console.log("Bundle Up!")
+    console.log(`Bundle Up!`)
 }
 
 /*
@@ -18,13 +18,13 @@ CHALLENGE
     Gold:
     If it is not your name, console log 'Hello, is your name <name here> ?'
 */
-let name = "Tim";
+let myName = `Tim`;
 
-if(name === "Tim") {
-    console.log(`Hello, my name is ${name}`);
+if(myName === `Tim`) {
+    console.log(`Hello, my name is ${myName}`);
 } else {
-    console.log(`Hello, is your name ${name}?`);
-};
+    console.log(`Hello, is your name ${myName}?`);
+}
 
 /*
 CHALLENGE
@@ -41,11 +41,37 @@ CHALLENGE
     If it is not, console.log the first letter of the string to uppercase plus the rest of the string to lowercase
 */
 
-name = 'zAchARy';
+let name = 'zAchARy';
 
 console.log(name[0])
 if (name[0] === name[0].toUpperCase()) {
     console.log(`Correct, it's ` + name[0] + name.substring(1,name.length).toLowerCase());
 } else {
     console.log(`Wrong, it's ` + name[0].toUpperCase() + name.substring(1,name.length).toLowerCase());
+}
+
+
+
+/*
+CHALLENGE
+************
+    Look up the format for an Else If statement
+    Set a variable of age and give it a number of your choice
+    Create an else if statement that checks the following:
+    If the age is 17 or younger, console.log 'Sorry, you're too young to do anything.'
+    If the age is at least 18, console.log 'You can vote!'
+    If the age is at least 21, console.log 'You can drink!'
+    If the age is at least 25, console.log 'You can rent a car!'
+*/
+
+let age = 56;
+
+if (age < 18) {
+    console.log(`Sorry, you're too young to do anything.`);
+} else if (age < 21) {
+    console.log(`Yay! You can vote!`);
+} else if (age < 25) {
+    console.log(`Yay! You can drink!`);
+} else {
+    console.log(`Yay! You can rent a car!`);
 }
