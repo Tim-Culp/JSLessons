@@ -1,0 +1,31 @@
+.deleteButton {
+    color: red;
+    background-color: blue;
+    height:min-content;
+    border: 0;
+    cursor: pointer;
+}
+.deleteButton:hover {
+    text-decoration: underline;
+}
+.groceryItem {
+    display: inline-flex;
+    list-style: upper-roman;
+    background-color: green;
+}
+.groceryList {
+    list-style: circle;
+}
+.groceryItem p{
+    width:max-content;
+    list-style: circle;
+    background-color: tomato;
+}
+.groceryItem p:hover{
+    background-color: #EEE;
+    /* text-decoration: line-through; */
+}
+.deleteButton:focus {
+    border: none;
+    box-shadow: none;
+}
